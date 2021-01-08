@@ -4,10 +4,10 @@ There is a master branch. There is also a development branch created from master
 
  - master
    - development
-     - development/apurba
-     - development/sumit
-     - development/himansu
-     - development/mohit
+     - dev/apurba
+     - dev/sumit
+     - dev/himansu
+     - dev/mohit
      
 Each of us will work in our indivisual branch as well as commit and push from that branch itself. This is for avoiding code conflict.
 
