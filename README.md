@@ -17,8 +17,8 @@ Then we will merge all our individual branches for a feature into development br
 ## Some git command
 
 ```git
-git colne 
-git checkout branch_name                                          // switching between branches
+git colne https://github.com/apurbar06/Our-Webpage.git            // to target this existing repository and create a clone
+git checkout branch_name                                          // for switching between branches
 git status                                                        // to display the state of the working directory
 git add .                                                         // to add all changes in the working directory
 git commit "commit message"                                       // to save changes
