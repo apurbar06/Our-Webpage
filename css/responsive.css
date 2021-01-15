@@ -141,6 +141,7 @@ NB: This is the responsive stylesheet of this theme.
 
     .intro.animate-rotate-3 h1 {
         font-size: 22px;
+        display: grid;
     }
 
     .single-hire h2 {
@@ -329,6 +330,7 @@ NB: This is the responsive stylesheet of this theme.
 
     .intro.animate-rotate-3 h1 {
         font-size: 35px;
+        display: grid;
     }
 
     .navbar-nav {
