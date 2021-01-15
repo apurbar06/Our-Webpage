@@ -43,99 +43,12 @@ $(document).ready(function () {
         }, 1000);
     });
 
-    // //*************counter-up js
 
-    // $('.counter').counterUp({
-    //     delay: 50,
-    //     time: 8000
-    // });
-
-
-    // //****** magnific popup
-
-    // $('.view').magnificPopup({
-    //     type:'image',
-    //     gallery: {
-    //         enabled: true
-    //     },
-    //     zoom: {
-    //         enabled: true,
-    //         duration: 300,
-    //         opener: function(element) {
-    //             return element.find('img');
-    //         }
-    //     }
-    // });
-
-    // $('.video-view').magnificPopup({
-    //     type:'iframe',
-    //     zoom: {
-    //         enabled: true,
-    //         duration: 300
-    //     }
-    // });
-
-
+    //************* Timeout for loder
     setTimeout(function(){
         $('body').addClass('loaded');
         $('h1').css('color','#222222');
     }, 1000);
-
-
-    // //************* Owl Carousel
-
-    // $(".testimonial-slider").owlCarousel({
-    //     loop:true,
-    //     margin:30,
-    //     nav:false,
-    //     dots:true,
-    //     autoplay:true,
-    //     autoplayHoverPause:true,
-    //     responsive:{
-    //         0:{
-    //             items:1
-    //         },
-    //         600:{
-    //             items:2
-    //         },
-    //         1000:{
-    //             items:3
-    //         }
-    //     }
-    // });
-
-    // $(".news-img-slider").owlCarousel({
-    //     loop:true,
-    //     margin:30,
-    //     nav:false,
-    //     dots:false,
-    //     autoplay:true,
-    //     autoplayHoverPause:true,
-    //     responsive:{
-    //         0:{
-    //             items:1
-    //         },
-    //         600:{
-    //             items:1
-    //         },
-    //         1000:{
-    //             items:1
-    //         }
-    //     }
-    // });
-
-    // //***********YTplayer js
-
-    // $('.video-bg').mb_YTPlayer({
-    //     showControls:false,
-    //     autoPlay:true,
-    //     loop:true,
-    //     mute:true,
-    //     startAt:0,
-    //     opacity:1,
-    //     quality:'default'
-    // });
-
 
 
 });
