@@ -51,6 +51,8 @@ h6{
     font-weight: 600;
 }
 
+
+
 h3{
     font-size: 20px;
     text-transform: none;
@@ -266,6 +268,7 @@ img {
     width: 51%;
     height: 100%;
     background: #d5d8d8;
+    background: white;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -416,7 +419,7 @@ img {
 
 /*----------- 4. Mouse Animate Icon Starts ------------------*/
 
-.mouse-icon {
+/* .mouse-icon {
     position: absolute;
     left: 10%;
     bottom: -160px;
@@ -459,7 +462,7 @@ img {
     0%   { top:5px;  opacity: 0;}
     30%  { top:10px; opacity: 1;}
     100% { top:25px; opacity: 0;}
-}
+} */
 
 /* --------- Mouse Animate Icon ends -------------- /*
 
@@ -471,7 +474,7 @@ img {
     -webkit-background-size:cover;
     background-size:cover;
     position: relative;
-    height: 100%;
+    height: 100vh;
 }
 
 .video-bg-area{
@@ -573,26 +576,115 @@ img {
 
 /*---------------6. About area starts ----------------*/
 
+.about-area {
+    padding: 3%;
+    width: 65%;
+    margin: auto;
+}
 
-
-
-
-
-
-
-
+.about-image {
+    width: 80%;
+    margin: auto;
+}
 
 /*--------------- About area ends ----------------*/
 
+
 /*---------------7. Team area starts ----------------*/
 
+.team-area {
+    padding: 2%;
+    margin-top: 2%;
+}
+
+.team-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.columns {
+    /* margin: 10px; */
+    border: 1.5px solid #DCDCDC;
+    margin: 5px;
+    padding: 15px 0px 15px 0px;
+    border-radius: 10px;
+}
+
+.face {
+    
+    width: 50%;
+    margin: auto;
+}
+
+.team-content {
+    font-size: 12px;
+    margin: auto;
+    padding: 5%;
+}
+
+.btn-more {
+    background-color: #007FFF;
+    width: -moz-available;
+    color: white;
+    border: none;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 20px;
+    margin: 0% 25%;
+}
+
+.btn-more:hover {
+    background-color: #1034A6;
+}
 
 
+@media screen and (max-width: 1020px) {
+    .team-content{
+        font-size: 12px;
+    } 
+    h4 {
+        font-size: 15px;
+    } 
+    .btn-more {
+        width: -moz-available;
+        padding: 3px;
+        font-size: 10px;
+        border-radius: 20px;
+        margin: 0% 25%;
+    }
+}
 
 
+@media screen and (max-width: 650px) {
+    .about-area{
+        width: 80%;
+    }
+    .team-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .team-content{
+        font-size: 10px;
+    }
+    .columns {
+        padding: 8px 0px 8px 0px;
+    }
+    .about-image {
+        width: 100%;
+    }
+    h4 {
+        font-size: 13px;
+    }
+    h2 {
+        font-size: 23px;
+    }
+    p {
+        font-size: 13px;
+    }
 
-
-
+}
 
 
 /*--------------- Team area ends ----------------*/
