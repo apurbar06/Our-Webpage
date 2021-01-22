@@ -1,16 +1,8 @@
-*{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
-}
+
 
 #one{
     text-align: center;
-    padding: 10px;
+    margin-top: 1px;
 }
 
 /* #pic1{
@@ -22,35 +14,36 @@
 body{
     /* background-color: #4F69AB; */
     /* color: #ffffff; */
-    font-family: Josefin Sans;
-    font-size: 20px;
-    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    /* margin-left: 20px; */
+    margin: 5%;
 }
 
-.split{
+
+
+
+
+/* .split{
     height: 400px;
     width: 50%;
-    /* height: max-content; */
     float: left;
-    /* position:fixed; */
     overflow-x: hidden;
 }
 
+
 .left{
     left: 0;
-    /* background-color: aqua; */
+    background-color: aqua;
 }
 
 .right{
     right: 0;
-    /* background-color: chartreuse; */
 }
 
 .centered {
-    /* position: absolute; */
     top: 50%;
     left: 50%;
-    /* transform: translate(-50%, -50%); */
     text-align: center;
 }
 
@@ -72,7 +65,6 @@ li{
     border-bottom: 1px solid black;
 }
 li a{
-    /* color: #ffffff; */
     text-decoration: none;
     font-size: 20px;
     display: block;
@@ -81,12 +73,20 @@ li a{
 }
 li a:hover{
     background-color: darkorange;
-}
+} */
 
 
-h2{
+
+
+
+
+
+
+
+
+/* h2{
     font-size: xx-large;
-}
+} */
 
 #exp{
     text-align: center;
@@ -96,13 +96,7 @@ h2{
     padding: 15px;
 }
 
-button{
-    color: #7854F7;
-    border: 2px solid #7854F7;
-    padding: 10px;
-    margin: 20px;
-    /* color: #ffffff; */
-}
+
 
 #EXP{
     text-decoration: underline;
@@ -118,7 +112,7 @@ button{
 
 .container{
     padding: 10px,40px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     position: relative;
     background-color: inherit;
     width: 50%;
@@ -132,7 +126,7 @@ button{
 .timeline::after{
     content: "";
     position: absolute;
-    width: 6px;
+    width: 3.5px;
     background-color: #2eccef;
     top: 0;
     bottom: 0;
@@ -142,15 +136,13 @@ button{
 }
 
 .content{
-    padding: 20px 20px;
-    /* margin: 10px; */
     position: relative;
-    border-radius: 6px;
+    border-radius: 15px;
     margin: auto;
     text-align: center;
-    width: 500px;
-    background-color:#53BD85;
-    border: 2px solid black;
+    width: 70%;
+    border: 1.5px solid #acacac;
+    padding: 10px 0 0 0;
 }
 
 .lt{
@@ -175,16 +167,16 @@ button{
 .container::after{
     content: "";
     position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -12px;
+    width: 15px;
+    height: 15px;
+    right: -6px;
     border-radius: 50%;
     top: 15px;
     z-index: 1;
     background-color: #35343A;
 }
 .rt::after{
-    left:-13px;
+    left:-9px;
     background-color: #FF7F00;
 }
 @media screen and (max-width:576px){
@@ -212,5 +204,94 @@ button{
     }
     .lt::after{
         left: -13px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skill-btn {
+    color: #acacac;
+    background: transparent;
+    font-size: 17px;
+    padding: 5px;
+    margin: 3px;
+    width: 12%;
+    border-radius: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.top-part {
+    height: 100vh;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;   
+    padding-top: 50px;
+    
+    animation: drop 1.3s ease;
+}
+
+.left {
+    transform: translate(0, 10%);
+    width: 35%;
+}
+
+.right {
+   width: 65%;
+}
+
+.face {
+    width: 50%;
+    margin: auto;
+}
+
+#abt{
+    font-size: 20px;
+    padding: 5px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.exp-section {
+    padding: 0 0 5% 0;
+    margin: auto;
+    width: 70%;
+}
+.exp-content {
+    font-size: 14px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px 0px 10px 0px;
+}
+
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
