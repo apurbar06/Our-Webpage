@@ -137,12 +137,13 @@ li a:hover{
 
 .content{
     position: relative;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     margin: auto;
     text-align: center;
-    width: 70%;
-    border: 1.5px solid #acacac;
+    width: 80%;
+    /* border: 1.5px solid #acacac; */
     padding: 10px 0 0 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 25px;
 }
 
 .lt{
@@ -179,33 +180,6 @@ li a:hover{
     left:-9px;
     background-color: #FF7F00;
 }
-@media screen and (max-width:576px){
-    #nav li:not(:last-child){
-        display:none;
-    }
-    img{
-        transform: scale(0.5);
-    }
-    .right{
-        left: 0;
-    }
-    .split{
-        width: 100%;
-        height:auto;
-    }
-    .container{
-        width: 100%;
-    }
-    .timeline::after{
-        left: 0;
-    }
-    .rt{
-        left: 0;
-    }
-    .lt::after{
-        left: -13px;
-    }
-}
 
 
 
@@ -239,16 +213,18 @@ li a:hover{
 img {
     max-width: 100%;
     height: auto;
+    border: 25px solid whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 25px;
 }
 
 .top-part {
-    height: 100vh;
-    display: flex;
-    width: 95%;
+    height: max-content;
+    display:flex;
+    /* width: 95%; */
     margin: 0 auto;   
     padding-top: 50px;
     
-    animation: drop 1.3s ease;
+    animation: drop 1s ease;
 }
 
 .left {
@@ -257,11 +233,11 @@ img {
 }
 
 .right {
-   width: 65%;
+    width: 65%;
 }
 
 .face {
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 
@@ -293,5 +269,40 @@ img {
     100% {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+@media screen and (max-width:576px){
+    #nav li:not(:last-child){
+        display:none;
+    }
+    /* img{
+        transform: scale(0.5);
+    } */
+    .right{
+        left: 0;
+        width: 100%;
+
+    }
+    .top-part{
+        display: inline;
+    }
+    .left{
+        width: 100%;
+    }
+    .split{
+        width: 100%;
+        height:auto;
+    }
+    .container{
+        width: 100%;
+    }
+    .timeline::after{
+        left: 0;
+    }
+    .rt{
+        left: 0;
+    }
+    .lt::after{
+        left: -9px;
     }
 }
