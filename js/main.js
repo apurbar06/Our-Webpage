@@ -52,9 +52,11 @@ $(document).ready(function () {
 
 
       //************ contact start
-
       var input = $(".validate-input .input100");
-      $(".validate-form").on("submit", function () {
+      $(".validate-form").on("submit", function (e) {
+
+        e.preventDefault();
+
         var check = true;
         for (var i = 0; i < input.length; i++) {
           if (validate(input[i]) == false) {
@@ -62,14 +64,20 @@ $(document).ready(function () {
             check = false;
           }
         }
+
+        if(check == true) {
+         sendMail(input);
+        }  
   
         return check;
       });
+
       $(".validate-form .input100").each(function () {
         $(this).focus(function () {
           hideValidate(this);
         });
       });
+
       function validate(input) {
         if ($(input).attr("type") == "email" || $(input).attr("name") == "email") {
           if (
@@ -88,13 +96,35 @@ $(document).ready(function () {
           }
         }
       }
+
       function showValidate(input) {
         var thisAlert = $(input).parent();
         $(thisAlert).addClass("alert-validate");
       }
+
       function hideValidate(input) {
         var thisAlert = $(input).parent();
         $(thisAlert).removeClass("alert-validate");
+      }
+
+      function sendMail(input) {
+        var name = $(input[0]).val().trim();
+        var email = $(input[1]).val().trim();
+        var msg = $(input[2]).val().trim();
+        var body = "Name : "+ name + " Email : "+ email +" Message : " + msg;
+
+        $('.validate-form').trigger("reset");
+
+        Email.send({
+          SecureToken : "70d2c70f-8f80-4873-8a70-5ee935836eee",
+          To : 'myebook711@gmail.com',
+          From : "apurbar06@gmail.com",
+          Subject : "This mail is regarding Our Webpage",
+          Body : body
+        }).then(
+          //  message => alert(message)
+          alert("Email sent successfully.")
+        );
       }
       
       //**************** contact end
