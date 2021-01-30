@@ -227,7 +227,7 @@
   transform: translateZ(-20px) rotateX(90deg);
   opacity: 0;
 }
-.is-visible .ah-headline.rotate-2 i {
+.is-visible .ah-headline.rotate-2 i{      
   opacity: 1;
 }
 .ah-headline.rotate-2 i.in {
@@ -251,7 +251,7 @@
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-.no-csstransitions .ah-headline.rotate-2 .is-visible i {
+.no-csstransitions .ah-headline.rotate-2 .is-visible i {  
   opacity: 1;
 }
 @-webkit-keyframes ah-rotate-2-in {
