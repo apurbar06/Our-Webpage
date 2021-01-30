@@ -248,11 +248,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .social {
-    display: flex;
     justify-content: center;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 0px;
+    width: 100%;
     margin-bottom: 100px;
 }
 
