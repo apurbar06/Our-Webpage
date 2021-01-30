@@ -237,9 +237,8 @@ h1, h2, h3, h4, h5 {
 /* footer area */
 .footer-area {
     background: #333333;
-    padding-top: 10%;
+    padding-top: 5%;
     text-align: center;
-    margin-top: 1%;
 }
 
 .footer-area p {
@@ -250,15 +249,17 @@ h1, h2, h3, h4, h5 {
 
 .social {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 80%;
     margin: 0 auto;
-    padding-top: 6%;
+    margin-top: 0px;
+    margin-bottom: 100px;
 }
 
 .social a {
+    margin-inline: 15px;
     text-decoration: none;
-    color:  #333333;
+    color:  #afaaf7;
 }
 .social a:focus {
     border: none;
