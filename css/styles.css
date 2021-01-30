@@ -257,7 +257,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .social a {
-    margin-inline: 15px;
+    margin: 0px 15px;
     text-decoration: none;
     color:  #afaaf7;
 }
