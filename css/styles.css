@@ -1,92 +1,38 @@
 
+.small-circle {
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    z-index: -99;
+    opacity: 0.5;
+}
+
+.mid-circle {
+    position: absolute;
+    top: 85%;
+    left: 60%;
+    z-index: -99;
+    opacity: 0.3;
+}
 
 #one{
     text-align: center;
     margin-top: 1px;
 }
 
-/* #pic1{
-    border-radius: 50%;
-    padding-top: 5%;
-    padding-left: 5%;
-} */
-
 body{
-    /* background-color: #4F69AB; */
-    /* color: #ffffff; */
-    font-family: Arial, Helvetica, sans-serif;
+    color: #202124;
+    line-height: 1.5rem;
+    letter-spacing: .1px;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    /* margin-left: 20px; */
-    margin: 5%;
+    margin: 2% 0 0 0; 
 }
 
-
-
-
-
-/* .split{
-    height: 400px;
-    width: 50%;
-    float: left;
-    overflow-x: hidden;
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    color: #202124;
 }
-
-
-.left{
-    left: 0;
-    background-color: aqua;
-}
-
-.right{
-    right: 0;
-}
-
-.centered {
-    top: 50%;
-    left: 50%;
-    text-align: center;
-}
-
-.centered img {
-    width: 350px;
-    border-radius: 50%;
-}
-
-#nav{
-    list-style-type: none;
-    overflow: hidden;
-    margin: 0;
-    padding: 0px;
-}
-
-li{
-    float: right;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-}
-li a{
-    text-decoration: none;
-    font-size: 20px;
-    display: block;
-    padding: 10px 20px;
-    text-align: center;
-}
-li a:hover{
-    background-color: darkorange;
-} */
-
-
-
-
-
-
-
-
-
-
-/* h2{
-    font-size: xx-large;
-} */
 
 #exp{
     text-align: center;
@@ -128,6 +74,7 @@ li a:hover{
     position: absolute;
     width: 3.5px;
     background-color: #2eccef;
+    /* background-color: rgb(94, 23, 235); */
     top: 0;
     bottom: 0;
     left: 50%;
@@ -154,17 +101,6 @@ li a:hover{
     left: 50%;
 }
 
-/* .lt::before{
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: #35343A;
-} */
-
 .container::after{
     content: "";
     position: absolute;
@@ -181,25 +117,6 @@ li a:hover{
     background-color: #FF7F00;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .skill-btn {
     color: #acacac;
     background: transparent;
@@ -215,21 +132,19 @@ li a:hover{
     height: auto;
     border: 25px solid whitesmoke;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 25px;
-    
 }
 
 .top-part {
-    height: max-content;
+    height: 100vh;
     display:flex;
-    /* width: 95%; */
     margin: 0 auto;   
-    padding-top: 50px;
-    
-    animation: drop 1s ease;
+    width: 90%;
+
+    animation: drop 1.3s ease;
 }
 
 .left {
-    transform: translate(0, 10%);
+    transform: translate(-12%, 10%);
     width: 35%;
 }
 
@@ -243,20 +158,20 @@ li a:hover{
 }
 
 #abt{
-    font-size: 20px;
+    font-size: 19px;
     padding: 5px;
     width: 85%;
     margin: 0 auto;
 }
 
 .exp-section {
-    padding: 0 0 5% 0;
+    padding: 0 0 7% 0;
     margin: auto;
     width: 70%;
 }
 .exp-content {
     font-size: 14px;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     padding: 10px 0px 10px 0px;
 }
@@ -280,6 +195,14 @@ li a:hover{
         transform: scale(0.75);
         margin-left: -15px;
     }
+    .mid-circle {
+        /* top: 110%; */
+        display: none;
+    }
+    .small-circle {
+        /* left: -40%; */
+        display: none;
+    }
     .right{
         left: 0;
         width: 100%;
@@ -290,6 +213,7 @@ li a:hover{
     }
     .left{
         width: 100%;
+        margin-bottom: 20%;
     }
     .split{
         width: 100%;
@@ -299,12 +223,61 @@ li a:hover{
         width: 100%;
     }
     .timeline::after{
-        left: 0;
+        left: 8px;
     }
     .rt{
-        left: 0;
+        left: 8px;
     }
     .lt::after{
-        left: -9px;
+        left: -1px;
     }
+}
+
+
+/* footer area */
+.footer-area {
+    background: #333333;
+    padding-top: 10%;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.footer-area p {
+    color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 6%;
+}
+
+.social a {
+    text-decoration: none;
+    color:  #333333;
+}
+.social a:focus {
+    border: none;
+}
+
+.main-page {
+    padding-left: 2%;
+
+    animation: drop 1s ease;
+}
+
+.main-page a {
+    text-decoration: none; 
+}
+.main-page a h1 {
+    color:  rgb(94, 23, 235);
+    font-size: 25px;
+    font-weight: bold;
+}
+.main-page a:focus {
+    border: none;
 }

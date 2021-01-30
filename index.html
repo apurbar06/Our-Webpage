@@ -13,8 +13,14 @@
 
 
     <!--========== Theme Fonts ==========-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,600,700,800" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,600,700,800" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
+
+    <!-- Font awesome css -->
+    <link rel="stylesheet"  href="css/font-awesome.min.css">
 
     <!--Bootstrap css-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -102,13 +108,13 @@
                             <div class="col-md-12">
                                 <section class="intro animate-rotate-3">
                                     <h1 class="ah-headline">
-                                        <span>We are</span>
+                                        <span>We are </span>
                                         <span class="ah-words-wrapper">
                                             <b class="is-visible">Apurba &nbsp; Roy</b> 
                                             <b>Sumit &nbsp; Kumar</b> 
-                                            <b>Mohit &nbsp; Mahendra &nbsp; Bhashme</b> 
+                                            <b>Mohit &nbsp; Mahendra</b> 
                                             <b>Himanshu</b> 
-                                        </span>
+                                        </span> 
                                     </h1>
                                 </section>
 
@@ -129,9 +135,11 @@
 
     
     <!--About Area Starts-->
+    <img class="mid-circle" src="images/home/mid-eclipse.svg">
+    <img class="small-circle" src="images/home/small-eclipse.svg">
 
+    <div class="about-back"> </div>
     <div class="about-area" id="about"> 
-        <!-- <hr style="height:2px;width:70%;border-width:0;color:gray;background-color:gray"> -->
         <h2 style="text-align: center;margin-top: 5%;margin-bottom: 30px;">About Us</h2> 
         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta beatae deleniti repellat, voluptate accusantium nam alias sapiente neque ipsum accusamus vitae optio sed exercitationem? Similique deserunt accusamus, fuga blanditiis sunt sapiente libero vero, id nihil labore molestias assumenda delectus ducimus et, alias reiciendis quas expedita. Dolore modi necessitatibus magnam ipsam!</p>
         <div class="about-image">
@@ -156,19 +164,19 @@
             
                 <div class="team-content">
                     <h4 style="text-align: center;"> Sumit </h4>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, recusandae!
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, recusandae! </p>
                 </div>
                 <center> <button class="btn-more" onclick="window.location.href='aboutSumit.html' "> Read more </button> </center>
             </div>
 
             <div class="columns" >
                 <div class="face">
-                    <img src="images/home/face.jpg" style="border-radius: 50%;">
+                    <img src="images/team/apurba.jpeg" style="border-radius: 50%;">
                 </div>
 
                 <div class="team-content">
                     <h4 style="text-align: center;"> Apurba </h4>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, recusandae!
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, recusandae! </p>
                 </div>
                 <center> <button class="btn-more" onclick="window.location.href='aboutApurba.html' "> Read more </button> </center>
             </div>
@@ -180,7 +188,7 @@
 
                 <div class="team-content">
                     <h4 style="text-align: center;"> Himanshu </h4>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, recusandae!
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, recusandae! </p>
                 </div>
                 <center> <button class="btn-more" onclick="window.location.href='aboutHimanshu.html' "> Read more </button> </center>
             </div>
@@ -192,7 +200,7 @@
 
                 <div class="team-content">
                     <h4 style="text-align: center;"> Mohit </h4>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, recusandae!
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, recusandae! </p>
                 </div>
                 <center> <button class="btn-more" onclick="window.location.href='aboutMohit.html' "> Read more </button> </center>
             </div>
@@ -203,26 +211,60 @@
 
 
 
-    <!--Contact Area Starts-->
-
-    <div class="contact-area" id="contact">  
-       
-        <h1 style="text-align: center;margin-top: 300px;margin-bottom: 300px;">This is contact section</h1> 
+   <!--Contact Area Starts-->
+  
+   <div class="contact-area" id="contact">  
+    <div class="bg-contact100" >
+        <div class="container-contact100">
+            <div class="wrap-contact100">
+                <div class="contact100-pic js-tilt" data-tilt>
+                    <img src="images/contact/envelop.png" alt="IMG">
+                </div>
+                <form class="contact100-form validate-form">
+                    <span class="contact100-form-title">
+                        Contact Us
+                    </span>
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+                        <input class="input100" type="text" name="name" placeholder="Name">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input class="input100" type="text" name="email" placeholder="Email">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Message is required">
+                        <textarea class="input100" name="message" placeholder="Message"></textarea>
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="container-contact100-form-btn">
+                        <button type="reset" class="contact100-form-btn">
+                        Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
+</div>
 
-    <!--Contact Area Ends-->
+<!--Contact Area Ends-->
 
 
 
-    <!--Footer Area Starts-->
+<!--Footer Area Starts-->
 
-    <div class="footer-area" id="footer">  
-        <hr style="height:2px;width:70%;border-width:0;color:gray;background-color:gray">
-        <h1 style="text-align: center;margin-top: 300px;margin-bottom: 300px;">This is footer section</h1> 
-        <hr style="height:2px;width:70%;border-width:0;color:gray;background-color:gray">
-    </div>
+<div class="footer-area" id="footer"> 
+    <p>Made with ❤ and support <br> Copyright © 2021. All Rights Reserved.</p>
+</div>
 
-    <!--Footer Area Ends-->
+<!--Footer Area Ends-->
+
 
 
 
@@ -230,6 +272,10 @@
 
     <!-- JQuery -->
     <script src="js/jquery.min.js"></script>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <script src="js/tilt.jquery.min.js"></script>
 
     <!-- Bootstrap js-->
     <script src="js/bootstrap.min.js"></script>
@@ -251,3 +297,6 @@
 </body>
 
 </html>
+
+
+<!-- #202124 -->
