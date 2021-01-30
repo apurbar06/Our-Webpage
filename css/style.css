@@ -750,7 +750,9 @@ img {
   p {
       font-size: 13px;
   }
-
+  .intro.animate-rotate-3 h1 {
+    font-size: 27px;
+  }
 }
 
 
@@ -1119,6 +1121,7 @@ img {
 background: #333333;
 padding-top: 10%;
 text-align: center;
+/* margin-top: 5%; */
 
 }
 .footer-area p {
