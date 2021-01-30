@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5 {
     }
     #pic1{
         transform: scale(0.75);
-        margin-left: 45px;
+        margin-left: 10px;
     }
     .mid-circle {
         /* top: 110%; */
