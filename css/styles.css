@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5 {
 }
 
 #abt{
-    font-size: 19px;
+    font-size: 18px;
     padding: 5px;
     width: 85%;
     margin: 0 auto;
@@ -188,6 +188,7 @@ h1, h2, h3, h4, h5 {
     }
 }
 @media screen and (max-width:576px){
+
     #nav li:not(:last-child){
         display:none;
     }
@@ -231,6 +232,29 @@ h1, h2, h3, h4, h5 {
     .lt::after{
         left: -1px;
     }
+
+    
+    h1 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    #abt {
+        font-size: 15px;
+    }
+    .exp-section p {
+        font-size: 15px;
+    }
+    .exp-content {
+        font-size: 12px;
+    }
+    .skill-btn {
+        font-size: 13px;
+    }
+    .footer-area p {
+        font-size: 12px;
+    }
 }
 
 
@@ -259,6 +283,12 @@ h1, h2, h3, h4, h5 {
     text-decoration: none;
     color:  #afaaf7;
 }
+
+.social a:hover {
+    color: white;
+    transition: 0.3s ease;
+}
+
 .social a:focus {
     border: none;
 }
