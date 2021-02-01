@@ -1,0 +1,1136 @@
+/* =================================================
+
+Template Name:  Our Website
+Author: Apurba Roy, member 2, member 3, member 4
+Version: 1.0
+Design and Developed by: Apurba Roy, member 2, member 3, member 4
+
+NB: This is the main stylesheet of this theme.
+
+=================================================== */
+
+/*
+Table of content
+
+1. Default css
+2. Preloader css
+3. Nav area css
+4. Mouse Animate Icon css
+5. Home area css
+6. About area css
+7. Team area css
+8. Contact area css
+9. Footer area css
+
+*/
+
+
+/*---------- 1. Default css starts ------------*/
+
+html,body{
+    height: 100%;
+}
+
+body{
+    /* font-family: 'Poppins', sans-serif; */
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    /* line-height: 1.7; */
+    /* color: #333333; */
+    /* font-weight: 400;  */
+    color: #202124;
+    line-height: 1.5rem;
+    letter-spacing: .1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Poppins', sans-serif;
+  color: #202124;
+  font-weight: bold;
+}
+
+
+
+h3{
+    font-size: 20px;
+    text-transform: none;
+}
+
+p {
+    letter-spacing: 0;
+    line-height:1.8;
+}
+
+a{
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+a:focus{
+    outline:none;
+    text-decoration: none;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding{
+    padding: 80px 0;
+}
+
+.section-header{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.section-header .line {
+    height: 2px;
+    width: 70px;
+    background: #11abb0;
+    margin:auto;
+}
+
+.section-header h2 {
+    margin-bottom: 30px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+/*---------- default css ends ------------*/
+
+/*-------------- 2. Preloader css starts ---------------*/
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+    overflow: hidden;
+ }
+ #loader{
+	position: relative;
+    left: 50%;
+    top: 50%;
+    height: 20vw;
+    width: 20vw;
+    margin: -10vw 0 0 -10vw; 
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+    border-bottom-color: #3498db; 
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    -o-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#loader:before{
+	content: "";
+    position: absolute;
+    top:2%;
+    bottom: 2%;
+    left: 2%;
+    right: 2%; 
+    border: 3px solid transparent;
+    z-index: 2;
+    border-top-color: #db213a;
+    border-radius: 50%;
+    -webkit-animation: spin 3s linear infinite;
+    -moz-animation: spin 3s linear infinite;
+    -o-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+
+}
+
+#loader:after{
+	content: "";
+    position: absolute;
+    top:5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%; 
+    border: 3px solid transparent;
+    border-top-color: #dec52d;
+    z-index: 2;
+    border-radius: 50%;
+    -webkit-animation: spin 1.5s linear infinite;
+    -moz-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+
+}
+
+/*Keyframes for spin animation */
+
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    50% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+
+@-moz-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    50% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+@-o-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    50% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    50% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+
+.no-js #loader-wrapper {
+    display: none;
+}
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #d5d8d8;
+    background: white;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all 0.3s 1s ease-out;
+    transition: all 0.3s 1s ease-out;
+}
+
+/*---------- preloader css ends -------------*/
+
+/*---------- 3. Nav area css starts -------------*/
+
+.nav-area{
+    height: 65px;
+}
+
+.nav-area.sticky_navigation{
+    background: #ffffff;
+    height: 55px;
+}
+
+.sticky_navigation{
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out ;
+    -ms-transition: all 0.4s ease-out ;
+    -o-transition: all 0.4s ease-out ;
+    transition: all 0.4s ease-out ;
+    -webkit-box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+    box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+}
+
+.sticky_navigation .main-menu{
+    margin-top: 0;
+}
+
+.sticky_navigation .navbar-brand, .sticky_navigation .navbar-brand span {
+    color: rgb(94, 23, 235);
+}
+
+.sticky_navigation .navbar-brand:hover, .sticky_navigation .navbar-brand:focus, .sticky_navigation .navbar-brand span {
+    color: #11abb0;
+}
+
+.sticky_navigation .nav li a {
+    /* color: #333333; */
+    color: rgba(0, 0, 0, 0.38);
+}
+.sticky_navigation .nav li a:hover {
+  color: #333333;
+  /* color: rgba(0, 0, 0, 0.38); */
+}
+
+.sticky_navigation .nav li.active a{
+    color:  rgb(94, 23, 235);
+    border-bottom: 2px solid rgb(94, 23, 235);
+}
+
+.sticky_navigation .navbar-brand:hover{
+    color: #333333;
+}
+
+.main-menu{
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    margin-top: 10px;
+}
+
+.navbar{
+    border:0;
+    margin-bottom: 0;
+}
+
+.navbar-brand{
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-size: 25px;
+    display: block;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar-right li{
+    display: inline-block;
+    float: none;
+}
+
+.navbar-right li a{
+    color: #ffffff;
+    font-size: 16px;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+}
+
+.navbar-right li.active a{
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav > li > a:hover,
+.nav > li > a:active,
+.nav > li > a:focus{
+    background: none;
+}
+
+.navbar-toggle .icon-bar{
+    background: #777777;
+}
+
+/*---------- Nav area css ends -------------*/
+
+/*----------- 4. Mouse Animate Icon Starts ------------------*/
+
+/* .mouse-icon {
+    position: absolute;
+    left: 10%;
+    bottom: -160px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    height: 50px;
+    width: 30px;
+    margin-left: -17px;
+    display: block;
+    z-index: 10;
+}
+
+.mouse-icon .wheel {
+    -webkit-animation-name: drop;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.mouse-icon .wheel {
+    position: relative;
+    border-radius: 10px;
+    background: #fff;
+    width: 4px;
+    height: 10px;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes drop	{
+    0%   { top:5px;  opacity: 0;}
+    30%  { top:10px; opacity: 1;}
+    100% { top:25px; opacity: 0;}
+} */
+
+/* --------- Mouse Animate Icon ends -------------- /*
+
+/* --------- 5. Home area css starts -----------*/
+
+.banner-area{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.158)), url(../images/home/banner-2.jpg);
+    background-position: center;
+    -webkit-background-size:cover;
+    background-size:cover; 
+    position: relative;
+    height: 100vh;
+}
+
+.video-bg-area{
+    position: relative;
+}
+
+.video-bg-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.banner-table{
+    display: table;
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner-table-cell{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.intro.animate-rotate-3 h1 {
+    font-size: 45px;
+}
+
+.ah-headline.letters.rotate-3 span {
+    color: #fff;
+}
+
+.ah-words-wrapper b {
+    color: #f8d210;
+}
+
+.socials {
+    margin-top: 30px;
+}
+
+.socials a i {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    padding: 13px;
+    font-size: 15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #11ABB0;
+    color: #ffffff;
+    margin: 0 5px 0 0;
+}
+
+.socials a i:hover {
+    border-color: #11abb0;
+    color: #ffffff;
+    background: #11abb0;
+    -webkit-transition: ease .5s;
+    -moz-transition: ease .5s;
+    -ms-transition: ease .5s;
+    -o-transition: ease .5s;
+    transition: ease .5s;
+}
+
+
+.welcome-text{
+    color: #ffffff;
+    text-align: left;
+}
+
+.welcome-text h2 {
+    font-size: 3.8em;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.banner-btn a {
+    background-color: #11abb0;
+    color: #ffffff;
+    padding: 10px 35px;
+    display: inline-block;
+    margin-top: 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+/* --------------  Home area css ends --------------- */
+
+/*---------------6. About area starts ----------------*/
+
+.about-area {
+    padding: 3%;
+    width: 65%;
+    margin: auto;
+}
+
+.about-image {
+    width: 80%;
+    margin: auto;
+}
+
+/*--------------- About area ends ----------------*/
+
+
+/*---------------7. Team area starts ----------------*/
+
+.mid-circle {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  opacity: 0.3;
+  z-index: +99;
+}
+.small-circle {
+  top: 190%;
+  position: absolute;
+  z-index: +99;
+  opacity: 0.8;
+}
+
+.team-area {
+  padding: 2%;
+  margin: 2% 0 4% 0;
+}
+
+.team-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 98%;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 25px;
+}
+
+.columns {
+  padding: 15px 0px 20px 0px;
+  border-right: 1.5px solid #dcdcdc;
+}
+#mohit {
+  border-right: none;
+}
+
+.face {
+  
+  width: 60%;
+  margin: auto;
+  filter: grayscale(100%);
+  opacity: 0.85;
+}
+
+.columns:hover > .face {
+  filter: grayscale(0);
+  opacity: 1;
+  transition: 0.3s ease;
+}
+.columns:hover {
+  background-color: whitesmoke;
+  transition: 0.3s ease;
+}
+
+.team-content {
+  margin: auto;
+  padding: 5%;
+}
+.team-content p {
+  line-height: 1.5;
+  text-align: center;
+  font-size: 12px;
+  margin: 0;
+}
+
+.btn-more {
+  /* background-color: #007FFF; */
+  background-color: rgb(94, 23, 235);
+  width: -moz-available;
+  color: white;
+  border: none;
+  padding: 4px;
+  font-size: 12px;
+  border-radius: 20px;
+  margin: 0% 25%;
+}
+.btn-more:hover {
+  transition: 0.3s ease;
+  background-color: #333;
+}
+
+
+@media screen and (max-width: 1020px) {
+  .small-circle {
+    top: 140%;
+    right: 70%;
+  }
+  .mid-circle {
+    display: none;
+  }
+  .face {
+      filter: grayscale(0);
+      opacity: 1;
+  }
+  .team-content{
+      font-size: 12px;
+  } 
+  h4 {
+      font-size: 15px;
+  } 
+  .btn-more {
+      width: -moz-available;
+      padding: 3px;
+      font-size: 10px;
+      border-radius: 20px;
+      margin: 0% 25%;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .small-circle {
+    right: 70%;
+  }
+  .mid-circle {
+    display: none;
+  }
+
+  .face {
+      filter: grayscale(0);
+      opacity: 1;
+  }
+  .about-area{
+      width: 80%;
+  }
+  .team-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  .team-content{
+      font-size: 10px;
+  }
+  .columns {
+      padding: 8px 0px 8px 0px;
+  }
+  .about-image {
+      width: 100%;
+  }
+  h4 {
+      font-size: 13px;
+  }
+  h2 {
+      font-size: 23px;
+  }
+  p {
+      font-size: 13px;
+  }
+  .intro.animate-rotate-3 h1 {
+    font-size: 27px;
+  }
+}
+
+
+/*--------------- Team area ends ----------------*/
+
+/*---------------8. Contact area starts ----------------*/
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/montserrat/Montserrat-Regular.ttf);
+  }
+  @font-face {
+    font-family: Montserrat-Bold;
+    src: url(../fonts/montserrat/Montserrat-Bold.ttf);
+  }
+  @font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url(../fonts/montserrat/Montserrat-ExtraBold.ttf);
+  }
+  @font-face {
+    font-family: Montserrat-Medium;
+    src: url(../fonts/montserrat/Montserrat-Medium.ttf);
+  }
+  input {
+    outline: none;
+    border: none;
+  }
+  textarea {
+    outline: none;
+    border: none;
+  }
+  textarea:focus,
+  input:focus {
+    border-color: transparent !important;
+  }
+  input:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  input:focus:-moz-placeholder {
+    color: transparent;
+  }
+  input:focus::-moz-placeholder {
+    color: transparent;
+  }
+  input:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+  textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  textarea:focus:-moz-placeholder {
+    color: transparent;
+  }
+  textarea:focus::-moz-placeholder {
+    color: transparent;
+  }
+  textarea:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+  input::-webkit-input-placeholder {
+    color: #aaa;
+  }
+  input:-moz-placeholder {
+    color: #aaa;
+  }
+  input::-moz-placeholder {
+    color: #aaa;
+  }
+  input:-ms-input-placeholder {
+    color: #aaa;
+  }
+  textarea::-webkit-input-placeholder {
+    color: #aaa;
+  }
+  textarea:-moz-placeholder {
+    color: #aaa;
+  }
+  textarea::-moz-placeholder {
+    color: #aaa;
+  }
+  textarea:-ms-input-placeholder {
+    color: #aaa;
+  }
+  button {
+    outline: none !important;
+    border: none;
+    background: 0 0;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  iframe {
+    border: none !important;
+  }
+  .bg-contact100 {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .container-contact100 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: rgba(232, 231, 235, 0.9);
+  }
+  .wrap-contact100 {
+    width: 1163px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 110px 130px 157px 148px;
+  }
+  .contact100-pic {
+    width: 310px;
+    padding-top: 55px;
+  }
+  .contact100-pic img {
+    max-width: 100%;
+  }
+  .contact100-form {
+    width: 390px;
+  }
+  .contact100-form-title {
+    display: block;
+    font-family: Montserrat-ExtraBold;
+    font-size: 24px;
+    color: #333;
+    line-height: 1.2;
+    text-align: left;
+    padding-bottom: 36px;
+  }
+  input.input100 {
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 50px;
+  }
+  input.input100[name="email"] {
+    padding: 0 30px 0 54px;
+  }
+  textarea.input100 {
+    min-height: 150px;
+    border-radius: 25px;
+    padding: 14px 30px;
+  }
+  .wrap-input100 {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 10px;
+  }
+  .input100 {
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666;
+  }
+  .focus-input100 {
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0;
+    color: rgba(132, 106, 221, 0.5);
+  }
+  .input100:focus + .focus-input100 {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+  }
+  @-webkit-keyframes anim-shadow {
+    to {
+      box-shadow: 0 0 60px 25px;
+      opacity: 0;
+    }
+  }
+  @keyframes anim-shadow {
+    to {
+      box-shadow: 0 0 60px 25px;
+      opacity: 0;
+    }
+  }
+  .symbol-input100 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+    pointer-events: none;
+    color: #aaa;
+    font-size: 15px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .input100:focus + .focus-input100 + .symbol-input100 {
+    color: #846add;
+    padding-left: 22px;
+  }
+  .container-contact100-form-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .contact100-form-btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: #846add;
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .contact100-form-btn:hover {
+    background: #333;
+  }
+  @media (max-width: 1200px) {
+    .contact100-pic {
+      width: 33.5%;
+    }
+    .contact100-form {
+      width: 44%;
+    }
+  }
+  @media (max-width: 992px) {
+    .wrap-contact100 {
+      padding: 110px 80px 157px 90px;
+    }
+    .contact100-pic {
+      width: 35%;
+    }
+    .contact100-form {
+      width: 55%;
+    }
+  }
+  @media (max-width: 768px) {
+    .wrap-contact100 {
+      padding: 110px 80px 157px;
+    }
+    .contact100-pic {
+      display: none;
+    }
+    .contact100-form {
+      width: 100%;
+    }
+  }
+  @media (max-width: 576px) {
+    .wrap-contact100 {
+      padding: 110px 15px 157px;
+    }
+  }
+  .validate-input {
+    position: relative;
+  }
+  .alert-validate::before {
+    content: attr(data-validate);
+    position: absolute;
+    max-width: 70%;
+    background-color: #fff;
+    border: 1px solid #c80000;
+    border-radius: 13px;
+    padding: 4px 25px 4px 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 8px;
+    pointer-events: none;
+    font-family: Montserrat-Medium;
+    color: #c80000;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+  }
+  .alert-validate::after {
+    content: "\f06a";
+    font-family: FontAwesome;
+    display: block;
+    position: absolute;
+    color: #c80000;
+    font-size: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 13px;
+  }
+  .alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1;
+  }
+  @media (max-width: 992px) {
+    .alert-validate::before {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+/*--------------- Contact area ends ----------------*/
+
+/*---------------9. Footer area starts ----------------*/
+
+
+
+
+.footer-area {
+background: #333333;
+padding-top: 10%;
+text-align: center;
+/* margin-top: 5%; */
+
+}
+.footer-area p {
+  color: rgb(255, 255, 255);
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+
+
+
+/*--------------- Footer area ends ----------------*/

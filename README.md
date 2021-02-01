@@ -18,6 +18,7 @@ Then we will merge all our individual branches for a feature into development br
 
 ```git
 git clone https://github.com/apurbar06/Our-Webpage.git            // to target this existing repository and create a clone
+git checkout -b branch_name                                       // to create a new branch
 git checkout branch_name                                          // for switching between branches
 git status                                                        // to display the state of the working directory
 git add .                                                         // to add all changes in the working directory
